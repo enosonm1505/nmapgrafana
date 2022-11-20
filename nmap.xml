@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sun Nov 20 16:13:49 2022 as: &quot;C:\\Program Files (x86)\\Nmap\\nmap.exe&quot; -p 8085 -A -oX gt.xml 10.15.50.137 -->
+<nmaprun scanner="nmap" args="&quot;C:\\Program Files (x86)\\Nmap\\nmap.exe&quot; -p 8085 -A -oX gt.xml 10.15.50.137" start="1668941029" startstr="Sun Nov 20 16:13:49 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="8085"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.15.50.137" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1668941030" endtime="1668941054"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.15.50.137" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="8085"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Jetty" version="9.4.46.v20220331" method="probed" conf="10"><cpe>cpe:/a:mortbay:jetty:9.4.46.v20220331</cpe></service><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-title" output="Site doesn&apos;t have a title (text/html;charset=utf-8)."></script><script id="http-server-header" output="Jetty(9.4.46.v20220331)"><elem>Jetty(9.4.46.v20220331)</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="8085"/>
+<portused state="closed" proto="udp" portid="39447"/>
+<osmatch name="Linux 4.15 - 5.6" accuracy="94" line="67241">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.4" accuracy="94" line="68106">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.0" accuracy="94" line="67026">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="94" line="54319">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 or 3.10" accuracy="94" line="56843">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="94" line="67443">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.3" accuracy="93" line="68085">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.4" accuracy="93" line="68179">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:5.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.35" accuracy="92" line="56326">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.39" accuracy="92" line="56423">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="598240" lastboot="Sun Nov 13 18:03:34 2022"/>
+<distance value="1"/>
+<tcpsequence index="259" difficulty="Good luck!" values="EA73A2E1,A44AC5CB,BDC46FF4,4A02AB49,2B7E6528,4B1089D"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="9C1B25FA,9C1B267A,9C1B26DA,9C1B275A,9C1B27BA,9C1B205A"/>
+<trace port="8085" proto="tcp">
+<hop ttl="1" ipaddr="10.15.50.137" rtt="10.00"/>
+</trace>
+<times srtt="9032" rttvar="1190" to="100000"/>
+</host>
+<runstats><finished time="1668941054" timestr="Sun Nov 20 16:14:14 2022" summary="Nmap done at Sun Nov 20 16:14:14 2022; 1 IP address (1 host up) scanned in 26.57 seconds" elapsed="26.57" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

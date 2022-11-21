@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Mon Nov 21 11:06:40 2022 as: nmap -p- -&#45;min-rate 1000 -v -oX defenceip.xml 182.79.32.192/27 59.144.72.0/27 122.187.179.248/29 182.66.85.24/29 182.71.157.32/29 122.187.64.72/29 182.66.221.224/27 -->
+<nmaprun scanner="nmap" args="nmap -p- -&#45;min-rate 1000 -v -oX defenceip.xml 182.79.32.192/27 59.144.72.0/27 122.187.179.248/29 182.66.85.24/29 182.71.157.32/29 122.187.64.72/29 182.66.221.224/27" start="1669009000" startstr="Mon Nov 21 11:06:40 2022" version="7.60" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1669009000"/>
+<taskend task="Ping Scan" time="1669009001" extrainfo="128 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 128 hosts." time="1669009001"/>
+<taskend task="Parallel DNS resolution of 128 hosts." time="1669009007"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.192" addrtype="ipv4"/>
+</host>
+<taskbegin task="Connect Scan" time="1669009007"/>
+<taskprogress task="Connect Scan" time="1669009038" percent="15.27" remaining="173" etc="1669009210"/>
+<taskprogress task="Connect Scan" time="1669009068" percent="35.76" remaining="110" etc="1669009178"/>
+<taskprogress task="Connect Scan" time="1669009098" percent="57.31" remaining="68" etc="1669009166"/>
+<taskprogress task="Connect Scan" time="1669009128" percent="78.33" remaining="34" etc="1669009161"/>
+<taskend task="Connect Scan" time="1669009162" extrainfo="262140 total ports"/>
+<host starttime="1669009000" endtime="1669009155"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="182.79.32.193" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="conn-refused" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="52228" rttvar="189" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669009158"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="182.79.32.194" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65525">
+<extrareasons reason="no-responses" count="65525"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="444"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="snpp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="500"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="isakmp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8082"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="blackice-alerts" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8880"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="cddbp-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="18264"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="51431"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56153"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+<port protocol="tcp" portid="61667"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+</ports>
+<times srtt="53071" rttvar="521" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669009160"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="182.79.32.195" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65525">
+<extrareasons reason="no-responses" count="65525"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="444"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="snpp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="500"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="isakmp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8082"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="blackice-alerts" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8880"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="cddbp-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="18264"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50160"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53409"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56980"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+</ports>
+<times srtt="53022" rttvar="644" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669009162"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="182.79.32.196" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65524">
+<extrareasons reason="no-responses" count="65524"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="444"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="snpp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="500"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="isakmp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4500"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="sae-urn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8082"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="blackice-alerts" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8880"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="cddbp-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="18264"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="51431"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56153"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+<port protocol="tcp" portid="61667"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+</ports>
+<times srtt="53073" rttvar="504" to="100000"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.197" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.198" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.199" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.200" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.201" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.202" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.204" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.205" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.206" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.207" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.208" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.209" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.210" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.215" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.216" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.217" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.219" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.222" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.79.32.223" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.0" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.1" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.3" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.4" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.5" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.8" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.9" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.10" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.11" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.12" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.13" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.14" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.15" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.16" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.17" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.18" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.19" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.20" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.21" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.22" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.23" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.24" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.25" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.26" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.27" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.28" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.29" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.30" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="59.144.72.31" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.179.248" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.179.250" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.179.251" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.179.252" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.179.253" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.179.254" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.179.255" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.85.24" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.85.25" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.85.26" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.85.27" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.85.28" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.85.29" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.85.30" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.85.31" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.71.157.32" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.71.157.34" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.71.157.35" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.71.157.36" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.71.157.37" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.71.157.38" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.71.157.39" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.64.72" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.64.74" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.64.75" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.64.76" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.64.77" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.64.78" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="122.187.64.79" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.224" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.225" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.226" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.227" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.228" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.229" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.231" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.232" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.233" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.234" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.235" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.236" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.237" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.238" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.239" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.240" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.241" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.242" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.243" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.244" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.245" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.246" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.247" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.248" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.249" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.250" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.251" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.252" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.253" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.254" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="182.66.221.255" addrtype="ipv4"/>
+</host>
+<taskbegin task="Connect Scan" time="1669009162"/>
+<taskprogress task="Connect Scan" time="1669009193" percent="3.58" remaining="834" etc="1669010027"/>
+<taskprogress task="Connect Scan" time="1669009223" percent="8.92" remaining="623" etc="1669009846"/>
+<taskprogress task="Connect Scan" time="1669009253" percent="13.76" remaining="571" etc="1669009823"/>
+<taskprogress task="Connect Scan" time="1669009301" percent="20.60" remaining="536" etc="1669009837"/>
+<taskprogress task="Connect Scan" time="1669009385" percent="30.82" remaining="501" etc="1669009885"/>
+<taskprogress task="Connect Scan" time="1669009415" percent="35.69" remaining="456" etc="1669009871"/>
+<taskprogress task="Connect Scan" time="1669009445" percent="40.80" remaining="411" etc="1669009856"/>
+<taskprogress task="Connect Scan" time="1669009520" percent="48.88" remaining="375" etc="1669009894"/>
+<taskprogress task="Connect Scan" time="1669009550" percent="53.73" remaining="335" etc="1669009884"/>
+<taskprogress task="Connect Scan" time="1669009655" percent="57.06" remaining="371" etc="1669010026"/>
+<taskprogress task="Connect Scan" time="1669009790" percent="65.79" remaining="327" etc="1669010117"/>
+<taskprogress task="Connect Scan" time="1669009820" percent="70.27" remaining="279" etc="1669010098"/>
+<taskprogress task="Connect Scan" time="1669009856" percent="75.31" remaining="228" etc="1669010083"/>
+<taskprogress task="Connect Scan" time="1669009904" percent="80.71" remaining="178" etc="1669010081"/>
+<taskprogress task="Connect Scan" time="1669009940" percent="85.69" remaining="130" etc="1669010070"/>
+<taskprogress task="Connect Scan" time="1669009976" percent="90.76" remaining="83" etc="1669010059"/>
+<taskprogress task="Connect Scan" time="1669010036" percent="95.87" remaining="38" etc="1669010074"/>
+<taskend task="Connect Scan" time="1669010151" extrainfo="983025 total ports"/>
+<host starttime="1669009000" endtime="1669009922"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="182.79.32.203" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8444"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pcsync-http" method="table" conf="3"/></port>
+</ports>
+<times srtt="52989" rttvar="421" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669009985"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="182.79.32.211" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9997"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="palace-6" method="table" conf="3"/></port>
+</ports>
+<times srtt="53279" rttvar="622" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669010000"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="182.79.32.212" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="53637" rttvar="2105" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669010007"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="182.79.32.213" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="55527">
+<extrareasons reason="no-responses" count="55527"/>
+</extraports>
+<extraports state="closed" count="9999">
+<extrareasons reason="conn-refused" count="9999"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="444"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="snpp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pharos" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5061"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="sip-tls" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50001"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50002"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="iiimsf" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50003"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="55073"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55555"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="53186" rttvar="363" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669010151"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="182.79.32.214" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="55525">
+<extrareasons reason="no-responses" count="55525"/>
+</extraports>
+<extraports state="closed" count="10007">
+<extrareasons reason="conn-refused" count="10007"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pharos" method="table" conf="3"/></port>
+<port protocol="tcp" portid="55555"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="53313" rttvar="382" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669009907"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="182.79.32.218" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="54487" rttvar="3645" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669009972"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="182.79.32.220" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="52963" rttvar="907" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669009998"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="182.79.32.221" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8444"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="pcsync-http" method="table" conf="3"/></port>
+</ports>
+<times srtt="54398" rttvar="1999" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669009926"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="59.144.72.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="aes-static-002.72.144.59.airtel.in" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="53351" rttvar="825" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669009985"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="59.144.72.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="aes-static-006.72.144.59.airtel.in" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="53290" rttvar="810" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669010000"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="59.144.72.7" addrtype="ipv4"/>
+<hostnames>
+<hostname name="aes-static-007.72.144.59.airtel.in" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="53408" rttvar="708" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669010123"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="122.187.179.249" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nsg-corporate-249.179.187.122.airtel.in" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="conn-refused" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="64609" rttvar="3796" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669010046"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="182.71.157.33" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nsg-static-033.157.71.182.airtel.in" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="conn-refused" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="28456" rttvar="1399" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669010074"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="122.187.64.73" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nsg-corporate-73.64.187.122.airtel.in" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="conn-refused" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="56206" rttvar="1460" to="100000"/>
+</host>
+<host starttime="1669009000" endtime="1669010006"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="182.66.221.230" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="28215" rttvar="1558" to="100000"/>
+</host>
+<runstats><finished time="1669010151" timestr="Mon Nov 21 11:25:51 2022" elapsed="1150.86" summary="Nmap done at Mon Nov 21 11:25:51 2022; 128 IP addresses (19 hosts up) scanned in 1150.86 seconds" exit="success"/><hosts up="19" down="109" total="128"/>
+</runstats>
+</nmaprun>
